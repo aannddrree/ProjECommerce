@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Chat";
+}
+<link href="~/css/chatsite.css" rel="stylesheet" />
+<!-- Public chat -->
+<article class="wrapper">
+    <h1>Converse com todos</h1>
+    <input type="hidden" value="@ViewBag.username" id="username" name="username" />
+    <section class="user box_shadow_0"
+             onclick="openChat(this)"
+             data-id="12345678910"
+             data-name="Publico">
+        <span class="user_icon">P</span>
+        <p class="user_name">Público</p>
+        <span class="user_date"></span>
+    </section>
+    <h1>Usuários conectados</h1>
+</article>
+<!-- User chats -->
+<div class="main"></div>
+<div class="chats_wrapper"></div>
+
